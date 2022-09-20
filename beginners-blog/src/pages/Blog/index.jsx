@@ -40,7 +40,7 @@ const Blog = () => {
           <div className='blog-desc'>
               {blog.description.map((category, i) => (
                 <div key={i}>
-                  <Chip1 label={category} />
+                  <Chip1 label={(category)} />
                 </div>
               ))}
               </div>

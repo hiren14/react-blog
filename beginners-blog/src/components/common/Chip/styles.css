@@ -7,12 +7,14 @@
   width: fit-content;
   text-transform: capitalize;
 }
-.chip1 {
+.chip1s {
   font-size: 0.7rem;
   color:black;
-  text-justify: auto;
-  line-height: normal;
+  /* text-justify: auto; */
+  line-height:normal;
   padding: 0.3rem 0.5rem;
+  font-family: 'Roboto', sans-serif;
   margin: auto;
-  width: fit-content;
+   width: 100%;
+   box-sizing:content-box;
 }

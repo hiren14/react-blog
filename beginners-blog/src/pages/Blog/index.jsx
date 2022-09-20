@@ -5,6 +5,7 @@ import Chip from '../../components/common/Chip';
 import EmptyList from '../../components/common/EmptyList';
 import './styles.css';
 import { Link } from 'react-router-dom';
+import Chip1 from '../../components/common/Chip/chip1';
 
 const Blog = () => {
   const { id } = useParams();
@@ -36,7 +37,13 @@ const Blog = () => {
             </div>
           </header>
           <img src={blog.cover} alt='cover' />
-          <p className='blog-desc'>{blog.description}</p>
+          <div className='blog-desc'>
+              {blog.description.map((category, i) => (
+                <div key={i}>
+                  <Chip1 label={category} />
+                </div>
+              ))}
+              </div>
         </div>
       ) : (
         <EmptyList />

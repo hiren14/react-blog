@@ -6,6 +6,7 @@ import EmptyList from '../../components/common/EmptyList';
 import './styles.css';
 import { Link } from 'react-router-dom';
 import Chip1 from '../../components/common/Chip/chip1';
+import Chip2 from '../../components/common/Chip/chip2';
 
 const Blog = () => {
   const { id } = useParams();
@@ -37,14 +38,75 @@ const Blog = () => {
             </div>
           </header>
           <img src={blog.cover} alt='cover' />
-          <div className='blog-desc'>
-              {blog.description.map((category, i) => (
+          <div className=' heading'>
+              {blog.heading.map((category, i) => (
                 <div key={i}>
                   <Chip1 label={(category)} />
                 </div>
               ))}
               </div>
+              <div className='blog-desc'>
+              {blog.description.map((category, i) => (
+                <div key={i}>
+                  <Chip2 label={(category)} />
+                </div>
+              ))}
+               {blog.point1.map((category, i) => (
+                <div key={i}>
+                  <Chip1 label={(category)} />
+                </div>
+              ))}
+               {blog.subpoint1.map((category, i) => (
+                <div key={i}>
+                  <Chip2 label={(category)} />
+                </div>
+              ))}
+             
+             {blog.point2.map((category, i) => (
+                <div key={i}>
+                  <Chip1 label={(category)} />
+                </div>
+              ))}
+               {blog.subpoint2.map((category, i) => (
+                <div key={i}>
+                  <Chip2 label={(category)} />
+                </div>
+              ))}
+                {blog.point3.map((category, i) => (
+                <div key={i}>
+                  <Chip1 label={(category)} />
+                </div>
+              ))}
+               {blog.subpoint3.map((category, i) => (
+                <div key={i}>
+                  <Chip2 label={(category)} />
+                </div>
+              ))}
+               {blog.point4.map((category, i) => (
+                <div key={i}>
+                  <Chip1 label={(category)} />
+                </div>
+              ))}
+               {blog.subpoint4.map((category, i) => (
+                <div key={i}>
+                  <Chip2 label={(category)} />
+                </div>
+              ))}
+               {blog.point5.map((category, i) => (
+                <div key={i}>
+                  <Chip1 label={(category)} />
+                </div>
+              ))}
+               {blog.subpoint5.map((category, i) => (
+                <div key={i}>
+                  <Chip2 label={(category)} />
+                </div>
+              ))}
+             
+              
+              </div>
         </div>
+
       ) : (
         <EmptyList />
       )}

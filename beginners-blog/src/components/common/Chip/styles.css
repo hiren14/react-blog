@@ -8,15 +8,27 @@
   text-transform: capitalize;
 }
 .chip1s {
-  font-size: 1rem;
+  font-size: 1.8rem;
   color:black;
   /* text-justify: auto; */
-  font-family: 'Open Sans', sans-serif;
-
+  
   line-height:normal;
   padding: 0.3rem 0.5rem;
-  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   margin: auto;
    width: 100%;
    box-sizing:content-box;
+}
+.chip2{
+  font-size: 1rem;
+  color:black;
+  /* text-justify: auto; */
+  
+  line-height:normal;
+  padding: 0.3rem 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  margin: auto;
+   box-sizing:content-box; 
 }
